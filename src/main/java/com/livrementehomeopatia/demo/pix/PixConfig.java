@@ -1,8 +1,13 @@
-package com.livrementehomeopatia.demo_pix.pix;
-
+package com.livrementehomeopatia.demo.pix;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 @ConfigurationProperties("app.pix")
-public record PixConfig(String clientId, String clientSecret, boolean sandbox, boolean debug, String certificatePath) {
-}
+public record PixConfig(
+        String clientId,
+        String clientSecret,
+        boolean sandbox,
+        boolean debug,
+        String certificatePath,
+        String certificatePassword
+) {}

@@ -32,7 +32,7 @@ build/
 ### VS Code ###
 .vscode/
 
-.local
+.cert
 **/application-local.properties
 *.png
 
